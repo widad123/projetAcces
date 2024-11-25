@@ -1,0 +1,55 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>mysql</groupId>
+  <artifactId>mysql-connector-java</artifactId>
+  <version>@MYSQL_CJ_VERSION@</version>
+  <packaging>jar</packaging>
+
+  <name>MySQL Connector/J</name>
+  <description>MySQL JDBC Type 4 driver</description>
+
+  <licenses>
+    <license>
+      <name>The GNU General Public License, Version 2</name>
+      <url>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</url>
+      <distribution>repo</distribution>
+      <comments>MySQL Connector/J contains exceptions to GPL requirements when linking with other components
+that are licensed under OSI-approved open source licenses, see EXCEPTIONS-CONNECTOR-J
+in this distribution for more details.</comments>
+    </license>
+  </licenses>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>9</source>
+          <target>9</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <url>http://dev.mysql.com/doc/connector-j/en/</url>
+
+  <scm>
+    <connection>scm:git:git@github.com:mysql/mysql-connector-j.git</connection>
+    <url>https://github.com/mysql/mysql-connector-j</url>
+  </scm>
+
+<dependencies>
+
+  <dependency>
+    <groupId>org.postgresql</groupId>
+    <artifactId>postgresql</artifactId>
+    <version>42.7.4</version>
+  </dependency>
+
+</dependencies>
+
+  <organization>
+    <name>Oracle Corporation</name>
+    <url>http://www.oracle.com</url>
+  </organization>
+</project>
